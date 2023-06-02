@@ -2,7 +2,7 @@ import express from 'express';
 import cors from 'cors';
 import bodyParser from 'body-parser';
 import config from './config.js';
-import userRoutes from "./routes/userRoutes.js";
+import userRoutes from "./app/routes/userRoutes.js";
 import dotenv from 'dotenv';
 
 

@@ -11,7 +11,7 @@ import {
 } from "firebase/firestore";
 import { v4 as uuidv4 } from "uuid";
 import User from "../models/user.js";
-import { RequiredParamsException } from "../lib/exceptions.js";
+import { RequiredParamsException } from "../../../lib/exceptions.js";
 import { query } from "express";
 
 const { firestore } = getFirebase();
