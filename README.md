@@ -15,7 +15,7 @@ You can test the API by using the jrnysPostman collection found here: https://gi
 ## Getting Started - Many of these instructions can be found in the Cloud Firestore Documentation: https://firebase.google.com/docs/firestore/. 
 - 1. Clone the repository
 - 2. Run `npm ci` 
-- 3. Run `nodemon` - this should successfully state that it has started `node index.js` 
+- 3. Run `nodemon` - this should successfully state that it has started `node main.js` 
 - 4. Install Cloud Firestore Emulator - `firebase setup:emulators:firestore`
 - 5. Initialize Firebase project in working directory - `firebase init`
 - 6. Start the emulator - `firebase emulators:start --only firestore`
