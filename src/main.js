@@ -28,7 +28,7 @@ const obj = {
 }
 
 
-const app = express();
+export const app = express();
 
 app.use(express.json());
 app.use(cors());
@@ -37,6 +37,9 @@ app.use(bodyParser.json());
 app.use("/api", userRoutes.routes);
 app.use(errorHandler);
 
-app.listen(config.port, () => {
-  console.log("Service endpoint= %s", config.url);
-});
+if (process.env.JEST_WORKER_ID !== undefined) {
+  app.listen(config.port, () => {
+    console.log("Service endpoint= %s", config.url);
+  });
+}
+
